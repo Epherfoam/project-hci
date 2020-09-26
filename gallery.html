@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Xtream Chaser</title>
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/gallery.js"></script>
+  </head>
+  <header>
+    <div class="mainLogo">
+      <img class="Logo" src="./assets/logo.png" alt="Company logo" />
+    </div>
+    <div class="dropdown">
+      <button class="navBtn">
+        <span class="material-icons">
+          expand_more
+        </span>
+      </button>
+      <div class="navigation">
+        <a href="index.html">HOMEPAGE</a>
+        <a href="character.html">CHARACTER</a>
+        <a href="lore.html">LORE</a>
+        <a href="gallery.html">GALLERIES</a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="range">
+      <figure>
+        <img
+          class="gallery"
+          id="imageGallery"
+          src="./assets/image-carousel1.jpg"
+          alt="Character Select"
+          style="width:100%;max-width:300px"
+        />
+        <figcaption>Character Select</figcaption>
+      </figure>
+    </div>
+
+    <div class="range">
+      <figure>
+        <img
+          class="gallery"
+          id="imageGallery"
+          src="./assets/image-carousel2.jpg"
+          alt="Gameplay"
+          style="width:100%;max-width:300px"
+        />
+        <figcaption>Gameplay</figcaption>
+      </figure>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+  </body>
+  <footer>
+    <ul class="footer-links">
+      <li><a href="index.thm">HOMEPAGE</a></li>
+      <div class="line"></div>
+      <li><a href="character.html">CHARACTER</a></li>
+      <div class="line"></div>
+      <li><a href="lore.html">LORE</a></li>
+      <div class="line"></div>
+      <li><a href="gallery.html">GALLERIES</a></li>
+    </ul>
+    <div class="bottomLogo">
+      <img class="Logo" src="./assets/logo.png" alt="Company logo" />
+    </div>
+  </footer>
+</html>

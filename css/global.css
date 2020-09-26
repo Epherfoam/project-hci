@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/BAHNSCHRIFT.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Blue Fonte Sans";
+  src: url("../fonts/Blue Fonte Sans.otf") format("opentype");
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff3a1a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #971b08;
+}
+
+.mainLogo {
+  display: flex;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: #ff3a1a;
+  justify-content: center;
+}
+.bottomLogo {
+  display: flex;
+  height: 4rem;
+  padding: 0.5rem;
+  margin: 1rem 0 0 0;
+  justify-content: center;
+}
+
+.Logo {
+  user-select: none;
+  cursor: pointer;
+  height: 100%;
+  display: block;
+}
+
+footer {
+  height: 10rem;
+  color: #ffffff;
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 2rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-links * {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin: 0.3rem;
+  user-select: none;
+}
+.line {
+  width: 1.5px;
+  background: white;
+}
+
+.navBtn {
+  background-color: #ff3a1a;
+  color: white;
+  width: 100%;
+  height: 2rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.navigation {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #fcc2a0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navigation a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navigation a:hover {
+  background-color: #f89962;
+}
+
+.dropdown:hover .navigation {
+  display: block;
+}
+
+.dropdown:hover .navBtn {
+  background-color: #971b08;
+}
+
+@media screen and (max-width: 800px) {
+  .navigation a {
+    font-size: 1rem;
+  }
+}
